@@ -1,4 +1,4 @@
-// Gerente eh um Funcionario, Gerente herda da class Funcionario
+// extends -> Gerente eh um Funcionario, Gerente herda da class Funcionario
 public class Gerente extends Funcionario{
     
     private int senha;
@@ -15,7 +15,7 @@ public class Gerente extends Funcionario{
         }
     }
 
-//   public double getBonificacao() {
-//          return this.salario;
-//     }
+   public double getBonificacao() {
+        return super.salario; //super -> esse atributo pertence a classe mae (Funcionario)
+     }
 }
