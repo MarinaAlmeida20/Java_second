@@ -2,10 +2,10 @@
 public class Funcionario {
     private String nome;
     private String cpf;
-    protected double salario; // protect -> Publico para o filho, p/ outras classes esta privado
+    private double salario; // protect -> Publico para o filho, p/ outras classes esta privado
    
     public double getBonificacao() {
-         return this.salario * 0.1;
+         return this.salario * 0.05;
         
     }
 
