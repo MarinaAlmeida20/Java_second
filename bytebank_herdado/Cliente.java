@@ -1,6 +1,23 @@
 package Java_second.Java_second.bytebank_herdado;
 
-public class Cliente extends Autenticavel {
+// assinatura do contrato (interface autenticavel)
+
+public class Cliente implements Autenticavel {
     
+    private int senha;
+
+    @Override
+    public void setSenha(int senha){
+
+    }
+
+    @Override
+    public boolean autentica(int senha){
+        if(this.senha == senha){
+            return true;
+        } else {
+            return false;
+        }
+    }
     
 }

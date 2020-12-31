@@ -1,19 +1,14 @@
 package Java_second.Java_second.bytebank_herdado;
 
-public abstract class Autenticavel{
+// Contrato Autenticavel
+    // Quem assina esse contrato precisa implementar (Dar vida)
+        // metodo setSenha
+        // metodo autentica
+public abstract interface Autenticavel{
 
-    private int senha;
 
-    public void setSenha(int senha){
-    this.senha = senha;
-    }
+    public abstract void setSenha(int senha);
 
-    public boolean autentica(int senha){
-        if(this.senha ==  senha) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+    public abstract boolean autentica(int senha);
     
 }
