@@ -1,21 +1,7 @@
 package Java_second.Java_second.bytebank_herdado;
 
-// extends -> Gerente eh um Funcionario, Gerente herda da class Funcionario
-public class Gerente extends Funcionario{
-    
-    private int senha;
-
-    public void setSenha(int senha) {
-        this.senha = senha;
-    }
-
-    public boolean autentica(int senha) {
-        if(this.senha == senha){
-            return true;
-        } else {
-            return false;
-        }
-    }
+// extends -> Gerente eh um Funcionario, Gerente herda da class FuncionarioAutenticavel
+public class Gerente extends FuncionarioAutenticavel{
 
    public double getBonificacao() {
         System.out.println("Chamando o metodo de bonificacao do GERENTE");
