@@ -1,3 +1,5 @@
+package Java_second.Java_second.bytebank_herdado;
+
 public class EditorVideo extends Funcionario {
     
     public double getBonificacao(){

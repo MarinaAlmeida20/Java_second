@@ -1,3 +1,4 @@
+package Java_second.Java_second.bytebank_herdado;
 
 // nao pode criar objetos dessa classepq e abstrata
 public abstract class Funcionario {

@@ -1,3 +1,5 @@
+package Java_second.Java_second.bytebank_herdado;
+
 // extends -> Gerente eh um Funcionario, Gerente herda da class Funcionario
 public class Gerente extends Funcionario{
     
