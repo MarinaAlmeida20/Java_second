@@ -1,6 +1,6 @@
 package Java_second.Java_second.bytebank_herdado;
 
-public abstract class FuncionarioAutenticavel extends Funcionario {
+public abstract class Autenticavel{
 
     private int senha;
 
