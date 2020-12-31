@@ -12,4 +12,9 @@ public class ContaCorrente extends Conta {
         System.out.println("Taxa para transações em conta corrente: 20 centavos");
         return super.saca(valor + 0.20);
     }
+
+    @Override
+    public void deposita(double valor) {
+        super.saldo += valor;
+    }
 }
