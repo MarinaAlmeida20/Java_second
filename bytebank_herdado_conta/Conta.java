@@ -1,6 +1,6 @@
 package Java_second.Java_second.bytebank_herdado_conta;
 
-public class Conta {
+public abstract class Conta {
     
         private double saldo;
         private int agencia;
@@ -10,10 +10,10 @@ public class Conta {
 
         public Conta(int agencia, int numero) {
             Conta.total++;
-            System.out.println("o total de contas e " + total);
+            //System.out.println("o total de contas e " + total);
             this.agencia = agencia;
             this.numero = numero;
-            System.out.println("Estou criando uma conta " + this.agencia + " " + this.numero);
+            //System.out.println("Estou criando uma conta " + this.agencia + " " + this.numero);
     
         }
     
@@ -31,12 +31,12 @@ public class Conta {
         }
     
         public boolean transfere(double valor, Conta destino){
-            if(this.saldo >= valor) {
-                this.saldo -= valor;
+            if(this.saca(valor)) {
                 destino.deposita(valor);
                 return true;
+            } else {
+                return false;
             }
-            return false;
         } 
     
         //Responsavel pelo saldo privado
