@@ -1,5 +1,7 @@
 
-public class Funcionario {
+// nao pode criar objetos dessa classepq e abstrata
+public abstract class Funcionario {
+
     private String nome;
     private String cpf;
     private double salario; // protect -> Publico para o filho, p/ outras classes esta privado
